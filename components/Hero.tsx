@@ -1,4 +1,4 @@
-import Image from "next/image";
+import HeroAnimation from "./HeroAnimation";
 
 export default function Hero() {
   return (
@@ -21,15 +21,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-md">
-        <Image
-          src="/assets/hero-characters.png"
-          alt="CreatorByte characters celebrating creators"
-          width={520}
-          height={320}
-          priority
-          className="mx-auto h-auto w-full"
-        />
+      <div className="mt-10">
+        <HeroAnimation />
       </div>
     </section>
   );
