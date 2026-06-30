@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function FooterCta() {
   return (
     <section className="relative overflow-hidden bg-blue-soft px-5 py-16 text-center md:py-20">
-      <div className="mx-auto max-w-2xl">
+      <div className="reveal mx-auto max-w-2xl">
         <h2 className="font-heading text-3xl font-bold leading-tight text-ink md:text-4xl">
           Make money
           <br />

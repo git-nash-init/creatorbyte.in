@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fredoka, DM_Sans } from "next/font/google";
 import "./globals.css";
+import RevealObserver from "@/components/RevealObserver";
 
 const fredoka = Fredoka({
   variable: "--font-fredoka",
@@ -30,7 +31,16 @@ export default function RootLayout({
       lang="en"
       className={`${fredoka.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <noscript>
+          {/* Ensure reveal content is visible without JS */}
+          <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
+        </noscript>
+      </head>
+      <body className="min-h-full flex flex-col">
+        <RevealObserver />
+        {children}
+      </body>
     </html>
   );
 }

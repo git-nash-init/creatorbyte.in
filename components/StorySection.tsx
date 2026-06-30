@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function StorySection() {
   return (
-    <section className="bg-cream px-5 py-12 md:py-16">
-      <div className="mx-auto max-w-5xl rounded-[32px] bg-white p-7 md:p-12">
+    <section className="reveal bg-cream px-5 py-12 md:py-16">
+      <div className="card3d mx-auto max-w-5xl rounded-[40px] p-7 md:p-12">
         <div className="grid items-center gap-8 md:grid-cols-[1.3fr_1fr]">
           <div>
             <h2 className="font-heading text-3xl font-bold text-ink md:text-4xl">

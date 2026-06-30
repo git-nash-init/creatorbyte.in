@@ -9,14 +9,14 @@ export default function FaqSection() {
 
   return (
     <section className="relative overflow-hidden bg-blue px-5 py-16 md:py-24">
-      <div className="mx-auto max-w-2xl">
-        <div className="space-y-3">
+      <div className="reveal mx-auto max-w-2xl">
+        <div className="space-y-4">
           {faqs.map((item, i) => {
             const isOpen = open === i;
             return (
               <div
                 key={item.q}
-                className="overflow-hidden rounded-[20px] bg-white/95"
+                className="card3d card3d-sm rounded-[20px]"
               >
                 <button
                   type="button"
